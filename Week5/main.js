@@ -18,15 +18,7 @@ function postFunction()
     }
     else if (comment1.innerHTML == "")
     {
-        if (text == "isus")
-        {
-            comment1.innerHTML = "น้าค่อมหรอมึง?";
-        }
-        else
-        {
-            comment1.innerHTML = text;
-        }
-        
+        comment1.innerHTML = text;
     }
     else if (comment2.innerHTML == "")
     {

@@ -8,21 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div>
-        <h1 id="headnav">Project</h1>
+    <nav class="nav-container">
+        <div id="nav1">
+            <a id="cooking" onclick="document.location='Week4/recipe.HTML'">Cooking</a>
+            <a id="blog" onclick="document.location='Week5/index.HTML'">Blog</a>
+            <a id="boxgame" onclick="document.location='Week7/index.HTML'">Box Game</a>
         </div>
-        <hr>
-        <div>
-        <button onclick="document.location='index.HTML'">Project</button>
-        <button onclick="document.location='Week4/recipe.HTML'">How Cook</button>
-        <button onclick="document.location='Week5/index.HTML'">Blog</button>
-        <button onclick="document.location='Week6/register.HTML'">Sign In</button>
-        <button onclick="document.location='Week7/index.HTML'">Box Game</button>
-
+        <div id="nav2">
+            <a id="home" >HOME</a>
+            <img id="navlogo" src="PIC\PortfolioLogo.png" alt="MainLogo">
+            <a id="project" >PROJECT</a>
+        </div>
+        
+        <div id="nav3">
+            <a onclick="document.location='Week6/register.HTML'">Sign Up</a>
+            <a onclick="document.location='Week6/login.HTML'">Log In</a>
         </div>
     </nav>
-    
+    <main class="main-container">
+        <div id="project-head">
+            <h1 id="ProjectHead">PROJECT</h1>
+        </div>
+        <div id="project-animation">   
+            <h1>ANIMATION</h1>
+            <img id="animation-pic" src="PIC/Animation-pic.png" alt="Animation-pic">
+            <br>
+            <a href="https://youtu.be/-YNmbX-lWP8"> Ghost & Buddy</a>
+        </div>
+    </main>
 </body>
 </body>
 </html>

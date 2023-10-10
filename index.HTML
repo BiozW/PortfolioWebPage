@@ -5,55 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="shortcut icon" href="PIC\PortfolioLogo.png" type="image/w-icon">
+    <link rel="shortcut icon" href="PIC/PortfolioLogo.png" type="image/w-icon">
     <title>Profolio</title>
 </head>
 <body>
-    <nav>
+    <nav class="nav-container">
         <div id="nav1">
-        <div>
-            <button onclick="document.location='Week4/recipe.HTML'">Cooking</button>
-            <button onclick="document.location='Week5/index.HTML'">Blog</button>
-            <button onclick="document.location='Week7/index.HTML'">Box Game</button>
-
-        </div>
-        <div>
-            <img id="navlogo" src="PIC\PortfolioLogo.png" alt="MainLogo">
-        </div>
-        <button id="goproject" >Project</button>
+            <a id="cooking">Cooking</a>
+            <a id="blog">Blog</a>
+            <a id="boxgame">Box Game</a>
         </div>
         <div id="nav2">
-            <button onclick="document.location='Week6/register.HTML'">Sign In</button>
+            <a id="home" >HOME</a>
+            <img id="navlogo" src="PIC\PortfolioLogo.png" alt="MainLogo">
+            <a id="project" >PROJECT</a>
+        </div>
+        
+        <div id="nav3">
+            <a id="signup">Sign Up</a>
+            <a id="login">Log In</a>
         </div>
     </nav>
-    <main>
-        <div>
+    <main class="main-container">
+        <div id="profile-name">
             <h1 id="WEB">W E B</h1>
-            <h2>Jirayu Sukbutr</h2>
+            <h2 id="fullname">Jirayu Sukbutr</h2>
+        </div>
+        <div id="profile-pic">
+            <img src="PIC\Group 3.png" alt="profile">
         </div>
         <div id="hobby">
-            <h2>งานอดิเรก</h2>
+            <h2>My Hobby</h2>
             <ul>
-                <li></li>
+                <li>Eat Nissin</li>
+                <li>Sleep</li>
+                <li>Watch Anime</li>
             </ul>
         </div>
         <div id="skills">
-            <h2>ทักษะ</h2>
+            <h2>My Skills</h2>
             <ul>
-                <li></li>
+                <li>3D Model</li>
+                <li>Illustration</li>
+                <li>Comedy</li>
             </ul>
         </div>
         <div id="interest">
-            <h2>ความสนใจ</h2>
+            <h2>My Interest Work</h2>
             <ul>
-                <li></li>
+                <li>3D Modeler</li>
+                <li>Interior Design</li>
+                <li>Architect</li>
             </ul>
         </div>
+        <div id="projectbox">
+            <a id="projectlink">PROJECT</a>
+        </div>
+        <div id="cookingbox">
+            <a id="cookinglink">Cooking <br> Chicken </a>
+        </div>
+        <div id="blogbox">
+            <a id="bloglink">BLOG</a>
+        </div>
+        <div id="boxgamebox">
+            <a id="boxgamelink">BOX GAME</a>
+        </div>
     </main>
-    <footer>
-        <div id="footinfo">
-            <span>Credit</span>
+    <footer class="footer-container">
+        <div>
+            <h3>Other Link</h3>
+            <img src="PIC/github-mark-white.png" alt="">
+            <li>BiozW/PortfolioWebPage</li>
+        </div>
+        <div>
+            <button>About Me</button>
+        </div>
+        <div>
+            <span>Spacial Thanks</span>
         </div>
     </footer>
 </body>

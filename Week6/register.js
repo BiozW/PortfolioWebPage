@@ -15,8 +15,8 @@ function validateForm() {
     }
     else
     {
-        alert("กรอกไม่ถูกเว้ย");
-        document.getElementById('errormsg').innerHTML = "รหัสไม่ตรงโว้ยยยย";
+        alert("กรอกไม่ถูก");
+        document.getElementById('errormsg').innerHTML = "รหัสไม่ตรง";
         return false;
     }
 

@@ -22,7 +22,7 @@ function checkLogin(){
 	}
 	else
 	{
-		alert("ผิดโว้ยยย");
+		alert("กรอกผิด");
 		return false;
 	}
 	//ถ้าตรวจสอบแล้วพบว่ามีการ login ไม่ถูกต้อง ให้ return false ด้วย
