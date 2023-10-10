@@ -1,10 +1,6 @@
 window.onload = pageLoad;
 
-function pageLoad(){
-	var form = document.getElementById("myForm");
-    form.onsubmit = validateForm;
-    form.onreset = reform;
-
+function pageLoad() {
     var home = document.getElementById("home");
     home.onclick = goHome;
 
@@ -36,7 +32,7 @@ goProject = () => {
 }
 
 goCooking = () => {
-    location.href = '../Week4/recipe.html';
+    location.href = 'recipe.html';
 }
 
 goBlog = () => {
@@ -48,30 +44,9 @@ goBoxGame = () => {
 }
 
 goSignUp = () => {
-    location.href = 'register.HTML';
+    location.href = '../Week6/register.HTML';
 }
 
 goLogIn = () => {
     location.href = '../Week6/login.html';
-}
-
-function validateForm() {
-    var a = document.forms["myForm"]["password"][0];
-    var b = document.forms["myForm"]["password"][1];
-
-    if (a.value == b.value)
-    {
-    }
-    else
-    {
-        alert("กรอกไม่ถูก");
-        document.getElementById('errormsg').innerHTML = "รหัสไม่ตรง";
-        return false;
-    }
-
-    //ถ้าตรวจสอบแล้วว่ามีการ register ไม่ถูกต้องให้ return false ด้วย
-}
-
-function reform(){
-    document.getElementById("myForm") = null;
 }

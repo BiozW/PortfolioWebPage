@@ -8,6 +8,7 @@ a{
 
 body{
 	background-color: black;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 nav{
@@ -29,7 +30,7 @@ nav{
 }
 
 .nav-container {
-    width: 97%;
+    width: 99%;	
 	display: grid;
 	grid-template-columns: 30% auto 30%;
     grid-gap: 30px;
@@ -74,7 +75,9 @@ nav{
 	border-radius: 10px;
 	font-size: 20px;
 	text-align: center;
-	background-color: white;
+	color: aliceblue;
+	background-color: black;
+	border: 3px solid #36FBCC;
 }
 
 #header{
@@ -94,9 +97,33 @@ nav{
 
 #footer{
 	grid-column: 1/ span 3;
+	font-size: 64pt;
 }
 
 @media only screen and (max-width: 768px) {
+	.nav-container {
+		display: grid;
+		grid-template-columns: 40% auto 40%;
+		grid-gap: 10px;
+	}
+	#nav1{
+		grid-column: 1 / span 1;
+		text-align: left;
+		padding-left: 50px;
+		font-size: 40pt;
+	}
+	
+	#nav2{
+		grid-column: 2 / span 1;
+	}
+	#nav3{
+		grid-column: 3 / span 1;
+		text-align: right;
+		padding-right: 50px;
+		font-size: 40pt;
+	}
+
+	}
 	.grid-container {
 		display: grid;
 		grid-template-columns: 40% auto;
@@ -117,15 +144,38 @@ nav{
 	#footer{
 		grid-column: 1 / span 2;
 	}
-}
+
 
 @media only screen and (max-width: 480px) {
+	.nav-container {
+		display: grid;
+		grid-template-columns: auto;
+		grid-gap: 30px;
+	}
+	#nav1{
+		grid-column: 1 / span 1;
+		text-align: center;
+		padding-left: 50px;
+		font-size: 20pt;
+	}
+	
+	#nav2{
+		grid-column: 1 / span 1;
+	}
+	#nav3{
+		grid-column: 1 / span 1;
+		text-align: center;
+		padding-right: 50px;
+		font-size: 20pt;
+	}
+
 	.grid-container {
 		display: grid;
 		grid-template-columns: auto;
 		grid-gap: 10px;
 	}
 	#header{
+		padding-top: 100px;
 		grid-column: 1 / span 1;
 	}
 	#main1{
@@ -144,6 +194,7 @@ nav{
 
 #right img{
 	width: 100%;
+	border-radius: 10px;
 }
 
 ul{

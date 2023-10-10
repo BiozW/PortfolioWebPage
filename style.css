@@ -63,7 +63,6 @@ nav{
 	border-radius: 10px;
 	font-size: 20px;
 	text-align: center;
-	background-color: white;
     bottom: 0%;
 
 }
@@ -168,11 +167,11 @@ nav{
 }
 
 #footer1{
-	grid-column: 1/ span 2;
+	grid-column: 1/ span 1;
 }
 
 #footer2{
-	grid-column: 1/ span 2;
+	grid-column: 3/ span 1;
 }
 
 
@@ -253,8 +252,6 @@ h3{
 
 
 footer{
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 10px solid;
     bottom: 0px;
 }
 
@@ -323,3 +320,23 @@ footer{
     border-radius: 10px;
 }
 
+#githublink{
+    padding: 30px;
+    font-size: larger;
+    text-align: left;
+}
+
+#githublink > img{
+    width: 50px;
+}
+
+#spacialthank{
+    padding: 30px;
+    font-size: larger;
+    text-align: left;
+}
+
+#spacialthank > img{
+    width: 50px;
+    padding-left: 60px;
+}
