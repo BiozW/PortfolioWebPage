@@ -24,11 +24,11 @@ function pageLoad() {
 }
 
 goHome = () => {
-    location.href = '../index.HTML';
+    location.href = '../index.html';
 }
 
 goProject = () => {
-    location.href = '../project.HTML';
+    location.href = '../project.html';
 }
 
 goCooking = () => {
@@ -44,7 +44,7 @@ goBoxGame = () => {
 }
 
 goSignUp = () => {
-    location.href = '../Week6/register.HTML';
+    location.href = '../Week6/register.html';
 }
 
 goLogIn = () => {
