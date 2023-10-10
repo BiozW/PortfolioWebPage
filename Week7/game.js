@@ -45,7 +45,7 @@ goBoxGame = () => {
 }
 
 goSignUp = () => {
-  location.href = 'Week6/register.html';
+  location.href = '../Week6/register.html';
 }
 
 goLogIn = () => {
