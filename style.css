@@ -41,14 +41,12 @@ nav{
 	display: grid;
 	grid-template-columns: 30% auto 30%;
 	grid-gap: 30px;
-    margin: 30px;
 }
 
 .main-container > div{
 	border-radius: 10px;
 	font-size: 20px;
 	text-align: center;
-
 }
 
 .footer-container {
@@ -84,25 +82,27 @@ nav{
     font-size: 40pt;
 }
 #profile-name{
-	grid-column: 1 / span 2;
+    text-align: center;
 }
 
 #profile-pic{
-	grid-column: 2 / span 1;
     padding-bottom: 100px;
+    text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 #hobby{
     grid-column: 1 / span 1;
     text-align: center;
-    height: 500px;
-    font-size: 40px;
+    font-size: 4vw;
+    height: auto;
 }
 
 #hobby > ul{
-    padding-left: 40%;
+    padding-left: 20%;
     text-align: justify;
-    font-size: 32px;
+    font-size: 3vw;
 }
 
 #skills{
@@ -111,41 +111,41 @@ nav{
     border: 3px solid #36FBCC;
     border-radius: 5px;
     color: aliceblue;
-    font-size: 40px;
+    font-size: 4vw;
 }
 
 #skills > ul{
-    padding-left: 40%;
+    padding-left: 20%;
     text-align: justify;
-    font-size: 32px;
+    font-size: 3vw;
 }
 
 #interest{
     grid-column: 3 / span 1;
     color: #36FBCC;
-    font-size: 40px;
+    font-size: 3.5vw;
 }
 
 #interest > ul{
-    padding-left: 40%;
+    padding-left: 20%;
     text-align: justify;
-    font-size: 32px;
+    font-size: 3vw;
 }
 
 #projectbox{
     grid-column: 1 / span 2;
-    font-size: 300px;
+    font-size: 12vw;
 }
 
 #cookingbox{
     border: 3px solid #36FBCC;
     grid-column: 3 / span 1;
-    font-size: 150px;
+    font-size: 5vw;
 }
 
 #blogbox{
     grid-column: 1 / span 1;
-    font-size: 200px;
+    font-size: 8vw;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 5px;
     backdrop-filter: blur(50px);
@@ -153,7 +153,7 @@ nav{
 
 #boxgamebox{
     grid-column: 2 / span 2;
-    font-size: 200px;
+    font-size: 8vw;
 }
 
 #project-head{
@@ -174,64 +174,110 @@ nav{
 	grid-column: 3/ span 1;
 }
 
+@media only screen and (max-width: 1147px) {
+    .nav-container {
+        width: 97%;
+        display: grid;
+        grid-template-columns: 30% auto 30%;
+        grid-gap: 30px;
+    }
+    #nav1{
+        grid-column: 1 / span 1;
+        text-align: left;
+        padding-left: 50px;
+        font-size: 20pt;
+    }
+    #nav2{
+        grid-column: 2 / span 1;
+    }
+    #nav3{
+        grid-column: 3 / span 1;
+        text-align: right;
+        padding-right: 50px;
+        font-size: 20pt;
+    }
+}
+
+
 
 @media only screen and (max-width: 768px) {
-	.grid-container {
-		display: grid;
-		grid-template-columns: 40% auto;
-		grid-gap: 10px;
-	}
-	#nav1{
-        grid-column: 1 / span 1;
+    .nav-container {
+        width: 97%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
     }
-    
     #nav2{
         grid-column: 1 / span 1;
     }
-    #main1{
+    #nav1{
         grid-column: 1 / span 1;
+        text-align: left;
+        padding-left: 50px;
+        font-size: 20pt;
     }
     
-    #main2{
+    #nav3{
         grid-column: 1 / span 1;
+        text-align: right;
+        padding-right: 50px;
+        font-size: 20pt;
+    }
+
+    #profile-pic{
+        width: 100%;
+        height: auto;
     }
     
     #footer1{
-        grid-column: 1/ span 2;
+        grid-column: 1/ span 1;
     }
     
     #footer2{
-        grid-column: 1/ span 2;
+        grid-column: 2/ span 1;
+    }
+    
+    #WEB{
+        padding-top: 200px;
+        font-size: 100px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-	.grid-container {
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: 10px;
-	}
-	#nav1{
-        grid-column: 1 / span 1;
+    .nav-container {
+        width: 97%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
     }
-    
     #nav2{
         grid-column: 1 / span 1;
     }
-    #main1{
+    #nav1{
         grid-column: 1 / span 1;
+        text-align: center;
+        padding-left: 50px;
+        font-size: 20pt;
     }
     
-    #main2{
+    #nav3{
         grid-column: 1 / span 1;
+        text-align: center;
+        padding-right: 50px;
+        font-size: 20pt;
     }
+
     
     #footer1{
-        grid-column: 1/ span 2;
+        grid-column: 1/ span 1;
     }
     
     #footer2{
-        grid-column: 1/ span 2;
+        grid-column: 1/ span 1;
+    }
+
+    #WEB{
+        font-size: 5vw;
     }
 }
 
@@ -247,7 +293,7 @@ body{
 }
 
 h3{
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -278,12 +324,9 @@ footer{
     font-family: Arial;
     font-size: 128px;
     font-style: normal;
-    font-weight: 900;
     line-height: normal;
     letter-spacing: 33.28px;
-    color: lin;
 	background: linear-gradient(180deg, #36FBCC 0%, rgba(54, 192, 251, 0.52) 100%);
-	background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -311,7 +354,7 @@ footer{
 #fullname{
     color: aliceblue;
     font-size: 64px;
-    text-align: right;
+    text-align: center;
 }
 
 #hobby{
@@ -332,7 +375,7 @@ footer{
 
 #spacialthank{
     padding: 30px;
-    font-size: larger;
+    font-size: 2vw;
     text-align: left;
 }
 
