@@ -344,9 +344,7 @@ footer{
     font-weight: 900;
     line-height: normal;
     letter-spacing: 33.28px;
-    color: lin;
 	background: linear-gradient(180deg, #36FBCC 0%, rgba(54, 192, 251, 0.52) 100%);
-	background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
